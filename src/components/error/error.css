@@ -1,0 +1,16 @@
+.error {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 3rem;
+}
+
+.error h2 {
+  padding: 2rem 0;
+}
+
+.error h3 {
+  padding-bottom: 3rem;
+}

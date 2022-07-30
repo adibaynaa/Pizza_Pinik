@@ -1,0 +1,74 @@
+header {
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.74), black);
+}
+
+.header__container {
+  padding-top: 1rem;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.logo {
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.navbar {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.navbar .lin {
+  margin-left: 1.5rem;
+  color: white;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.navbar .lin:hover {
+  color: rgb(255, 194, 62);
+}
+
+@media screen and (max-width: 1024px) {
+  .header-content {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    padding-top: 0.5rem;
+  }
+
+  .navbar .lin {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-content {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .logo {
+    width: 55%;
+  }
+
+  .navbar {
+    padding-top: 0.4rem;
+  }
+
+  .navbar .lin {
+    margin-left: 0.8rem;
+    font-size: 0.75rem;
+  }
+}
